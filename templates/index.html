@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Web Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌐 Advanced Web Scraper</h1>
+        <form method="POST">
+            <label>Website URL:</label>
+            <input type="text" name="url" placeholder="https://quotes.toscrape.com" required>
+
+            <label>Number of Pages:</label>
+            <input type="number" name="pages" value="1" min="1" required>
+
+            <label>Select Data to Scrape:</label>
+            <div class="checkboxes">
+                <label><input type="checkbox" name="quotes" checked> Quotes</label>
+                <label><input type="checkbox" name="authors" checked> Authors</label>
+            </div>
+
+            <button type="submit">Scrape Data</button>
+        </form>
+
+        {% if message %}
+            <p class="message">{{ message }}</p>
+            {% if download %}
+                <a href="{{ url_for('download_file') }}" class="download-button">Download CSV</a>
+            {% endif %}
+        {% endif %}
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
