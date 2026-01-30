@@ -1,6 +1,8 @@
 🌐 Advanced Web Scraper – Full Stack Minor Project
 ---
 An Advanced Web Scraper is a tool that automatically collects data from websites and saves it in a structured format.
+Advanced Web Scraper
+
 
 🧩 TECH STACK
 ---
@@ -225,4 +227,5 @@ Flask Documentation
 BeautifulSoup Documentation
 
 Requests Library Documentation
+
 
