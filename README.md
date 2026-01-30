@@ -1,6 +1,6 @@
 🌐 Advanced Web Scraper – Full Stack Minor Project
 ---
-
+An Advanced Web Scraper is a tool that automatically collects data from websites and saves it in a structured format.
 
 🧩 TECH STACK
 ---
@@ -65,37 +65,37 @@ Web browser (Chrome, Firefox, etc.)
 5️⃣ SYSTEM ARCHITECTURE
 ---
 User
-
  ↓
-
 Frontend (HTML / CSS / JS)
-
 ↓
-
 Flask Backend (Python)
-
  ↓
- 
 Web Scraping Logic (Requests + BeautifulSoup)
- 
  ↓
- 
 CSV File Storage (Pandas)
 
 6️⃣ PROJECT STRUCTURE
 ---
 Advanced_Web_Scraper/
 │
+
 ├── app.py                 # Flask backend & scraping logic
+
 ├── scraped_data.csv       # Output data file
+
 ├── README.md
 │
+
 ├── templates/
-│   └── index.html         # User interface
 │
+└── index.html         # User interface
+│
+
 ├── static/
-│   ├── style.css          # Page styling
-│   └── script.js          # Frontend interactions
+│
+├── style.css          # Page styling
+│  
+└── script.js          # Frontend interactions
 
 7️⃣ MODULE DESCRIPTION
 ---
@@ -225,3 +225,4 @@ Flask Documentation
 BeautifulSoup Documentation
 
 Requests Library Documentation
+
